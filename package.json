@@ -1,0 +1,12 @@
+{
+  "name": "used-car-analysis",
+  "version": "1.0.0",
+  "description": "Used Cars Analysis Dashboard and API",
+  "main": "api.py",
+  "scripts": {
+    "start": "python api.py"
+  },
+  "keywords": ["data-analysis", "used-cars", "python", "flask", "pandas"],
+  "author": "Harsh Karn",
+  "license": "MIT"
+}

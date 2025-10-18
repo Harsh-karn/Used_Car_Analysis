@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Cars Analysis Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #1f77b4 0%, #ff6b6b 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 300;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .feature-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 5px solid #1f77b4;
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card h3 {
+            color: #1f77b4;
+            margin-top: 0;
+        }
+        .api-section {
+            background: #e8f4fd;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        .endpoint {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #28a745;
+        }
+        .method {
+            color: #28a745;
+            font-weight: bold;
+            font-family: monospace;
+        }
+        .btn {
+            display: inline-block;
+            background: #1f77b4;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 10px 10px 0;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #155a8a;
+        }
+        .btn-secondary {
+            background: #6c757d;
+        }
+        .btn-secondary:hover {
+            background: #545b62;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚗 Used Cars Analysis</h1>
+            <p>Comprehensive Data Analysis Dashboard & API</p>
+        </div>
+        
+        <div class="content">
+            <h2>📊 Project Overview</h2>
+            <p>This project provides a comprehensive analysis of used car data with interactive visualizations, machine learning insights, and a RESTful API. Built with Python, Pandas, and modern web technologies.</p>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <h3>📈 Data Analysis</h3>
+                    <p>Comprehensive analysis of 6,019 used car records from 1998-2019, including price trends, brand comparisons, and market insights.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🤖 Machine Learning</h3>
+                    <p>Advanced correlation analysis and feature importance ranking to understand what drives car prices in the used car market.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>📊 Interactive Visualizations</h3>
+                    <p>Dynamic charts and graphs powered by Plotly, showing price distributions, brand comparisons, and market trends.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🔍 Data Explorer</h3>
+                    <p>Interactive filtering and search capabilities to explore the dataset with custom filters for brands, fuel types, and price ranges.</p>
+                </div>
+            </div>
+            
+            <div class="api-section">
+                <h2>🔌 API Endpoints</h2>
+                <p>Access the data programmatically through our RESTful API:</p>
+                
+                <div class="endpoint">
+                    <span class="method">GET</span> /api/stats - Get dataset statistics
+                </div>
+                
+                <div class="endpoint">
+                    <span class="method">GET</span> /api/brands - Get brand analysis
+                </div>
+                
+                <div class="endpoint">
+                    <span class="method">GET</span> /api/years - Get year analysis
+                </div>
+                
+                <div class="endpoint">
+                    <span class="method">GET</span> /api/fuel - Get fuel type analysis
+                </div>
+                
+                <div class="endpoint">
+                    <span class="method">GET</span> /api/correlation - Get feature correlations
+                </div>
+                
+                <div class="endpoint">
+                    <span class="method">POST</span> /api/search - Search cars with filters
+                </div>
+                
+                <div style="margin-top: 20px;">
+                    <a href="/api/stats" class="btn">Test API</a>
+                    <a href="https://github.com/Harsh-karn/Used_Car_Analysis" class="btn btn-secondary">View Source</a>
+                </div>
+            </div>
+            
+            <h2>🛠️ Technologies Used</h2>
+            <ul>
+                <li><strong>Python</strong> - Core programming language</li>
+                <li><strong>Pandas</strong> - Data manipulation and analysis</li>
+                <li><strong>NumPy</strong> - Numerical computing</li>
+                <li><strong>Scikit-learn</strong> - Machine learning algorithms</li>
+                <li><strong>Plotly</strong> - Interactive visualizations</li>
+                <li><strong>Flask</strong> - Web API framework</li>
+                <li><strong>Streamlit</strong> - Interactive dashboard</li>
+            </ul>
+            
+            <h2>📋 Dataset Information</h2>
+            <ul>
+                <li><strong>Total Records:</strong> 6,019 used cars</li>
+                <li><strong>Time Period:</strong> 1998-2019</li>
+                <li><strong>Features:</strong> Price, Brand, Year, Fuel Type, Transmission, Owner Type, Engine Size, Power, Mileage, Location</li>
+                <li><strong>Price Range:</strong> ₹0.44L - ₹160.0L</li>
+                <li><strong>Unique Brands:</strong> 32 different car brands</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

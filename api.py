@@ -4,11 +4,12 @@ Used Cars Analysis - Flask API
 RESTful API for the capstone project
 """
 
-from flask import Flask, jsonify, request, render_template_string
+from flask import Flask, jsonify, request, render_template_string, send_file
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 import json
+import os
 
 app = Flask(__name__)
 
@@ -49,8 +50,11 @@ df = load_data()
 
 @app.route('/')
 def home():
-    """Home page with API documentation"""
-    return render_template_string("""
+    """Home page - serve index.html"""
+    if os.path.exists('index.html'):
+        return send_file('index.html')
+    else:
+        return render_template_string("""
     <!DOCTYPE html>
     <html>
     <head>
