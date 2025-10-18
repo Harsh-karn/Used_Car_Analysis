@@ -21,7 +21,11 @@ def load_data():
     global df
     if df is None:
         try:
-            df = pd.read_csv('used_cars.csv')
+            # Try sample data first, fallback to full data
+            if os.path.exists('used_cars_sample.csv'):
+                df = pd.read_csv('used_cars_sample.csv')
+            else:
+                df = pd.read_csv('used_cars.csv')
             
             # Data cleaning functions
             def clean_mileage(mileage):

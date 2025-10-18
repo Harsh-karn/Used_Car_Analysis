@@ -3,6 +3,7 @@ major_project_used_cars_executed.ipynb
 major_project_used_cars_fixed.ipynb
 major_project_used_cars.ipynb
 used_cars.xlsx
+used_cars.csv
 
 # Images (we'll serve them from the API)
 *.png
@@ -12,6 +13,7 @@ fix_notebook.py
 run_analysis.py
 run_notebook_analysis.py
 create_visualizations.py
+create_sample_data.py
 
 # Docker files (not needed for Vercel)
 Dockerfile
