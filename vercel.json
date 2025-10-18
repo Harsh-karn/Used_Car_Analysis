@@ -2,18 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "api_light.py",
+      "src": "api_minimal.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "api_light.py"
+      "dest": "api_minimal.py"
     },
     {
       "src": "/(.*)",
-      "dest": "api_light.py"
+      "dest": "api_minimal.py"
     }
   ],
   "env": {
