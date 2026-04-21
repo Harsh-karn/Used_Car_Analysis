@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Used Cars Analysis - Capstone Project
+Used Cars Analysis
 This script runs the complete analysis from the Jupyter notebook
 """
 

@@ -15,7 +15,7 @@ warnings.filterwarnings('ignore')
 
 def main():
     print("="*60)
-    print("USED CARS ANALYSIS - CAPSTONE PROJECT")
+    print("USED CARS ANALYSIS")
     print("="*60)
     
     # Cell 1: Imports

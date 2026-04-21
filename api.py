@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Used Cars Analysis - Flask API
-RESTful API for the capstone project
+RESTful API
 """
 
 from flask import Flask, jsonify, request, render_template_string, send_file

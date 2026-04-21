@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Used Cars Analysis - Streamlit Web Application
-Deployable web app for the capstone project
+Deployable web app
 """
 
 import streamlit as st
@@ -82,7 +82,7 @@ def load_data():
 def main():
     # Header
     st.markdown('<h1 class="main-header">🚗 Used Cars Analysis Dashboard</h1>', unsafe_allow_html=True)
-    st.markdown("### Capstone Project - Data Science Analysis")
+    st.markdown("### Data Science Analysis")
     
     # Load data
     with st.spinner('Loading data...'):
@@ -274,7 +274,7 @@ def main():
     
     # Footer
     st.markdown("---")
-    st.markdown("### 🎓 Capstone Project - Used Cars Analysis")
+    st.markdown("### 🎓 Used Cars Analysis")
     st.markdown("**Technologies:** Python, Pandas, Streamlit, Plotly, Scikit-learn")
     st.markdown("**Dataset:** 6,019 used car records from 1998-2019")
 

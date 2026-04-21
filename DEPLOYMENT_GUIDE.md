@@ -13,7 +13,7 @@ This project can be deployed in multiple ways. Choose the option that best fits 
    git init
    git add .
    git commit -m "Initial commit"
-   git remote add origin https://github.com/yourusername/used-cars-analysis.git
+   git remote add origin https://github.com/Harsh-karn/used-cars-analysis.git
    git push -u origin main
    ```
 
@@ -23,7 +23,7 @@ This project can be deployed in multiple ways. Choose the option that best fits 
    - Select `app.py` as the main file
    - Deploy!
 
-**Live URL:** `https://yourusername-used-cars-analysis-app-xxxxx.streamlit.app`
+**Live URL:** `https://Harsh-karn-used-cars-analysis-app-xxxxx.streamlit.app`
 
 ### 2. **Heroku**
 **Popular cloud platform**
@@ -36,7 +36,7 @@ This project can be deployed in multiple ways. Choose the option that best fits 
 2. **Deploy:**
    ```bash
    heroku login
-   heroku create your-app-name
+   heroku create used-cars-analysis-harsh
    git push heroku main
    ```
 
