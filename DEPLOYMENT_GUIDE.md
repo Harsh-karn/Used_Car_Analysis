@@ -23,7 +23,7 @@ This project can be deployed in multiple ways. Choose the option that best fits 
    - Select `app.py` as the main file
    - Deploy!
 
-**Live URL:** `https://Harsh-karn-used-cars-analysis-app-xxxxx.streamlit.app`
+**Live URL:** [https://analysis-used-car.streamlit.app/](https://analysis-used-car.streamlit.app/)
 
 ### 2. **Heroku**
 **Popular cloud platform**
@@ -81,6 +81,8 @@ used-cars-analysis/
 ├── app.py                 # Streamlit web app
 ├── api.py                 # Flask REST API
 ├── requirements.txt      # Python dependencies
+├── environment.yml       # Conda environment
+├── test_app.py           # Automated tests
 ├── Procfile              # Heroku deployment
 ├── runtime.txt           # Python version
 ├── setup.sh              # Heroku setup script
@@ -94,14 +96,14 @@ used-cars-analysis/
 
 ### `requirements.txt`
 ```
-streamlit==1.50.0
-pandas==2.2.3
-numpy==2.2.6
-matplotlib==3.10.7
-seaborn==0.13.2
-plotly==6.1.0
-scikit-learn==1.7.2
-flask==3.1.2
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+scikit-learn
+flask
 ```
 
 ### `Procfile` (for Heroku)
